@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f675a8;
+}
+
+
+.start-container {
+  background-color: #293462;
+  height: 100vh;
+}
+
+.start-container h1 {
+  font-size: 70px;
+  color: beige;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-container h2 {
+  color: beige;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-container .scroll-down {
+  border: 5px solid beige;
+  position: absolute;
+  height: 100px;
+  width: 75px;
+  bottom: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+.profile {
+  background-color: #277bc0;
+  padding-top: 50px;
+}
+.profile .about-me {
+  margin: 0% 20% 0% 20%;
+  padding: 2% 0%;
+}
+
+.profile h1 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.profile .introduction {
+  margin: 15px;
+  padding: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.profile .about-me img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile span {
+  font-size: 1em;
+}
+
+
+.experience {
+  background-color: #42855b;
+  padding-top: 50px;
+}
+.experience .list-experiences {
+  margin: 0% 20% 0% 20%;
+  padding: 2% 0%;
+}
+
+.experience h1 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.experience h3 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.experience span {
+  font-size: 1em;
+}
+
+.experience .introduction {
+  margin: 15px;
+  padding: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.experience .list-experiences img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projects {
+  background-color: gold;
+  padding-top: 50px;
+}
+.projects .list-projects {
+  margin: 0% 20% 0% 20%;
+  padding: 2% 0%;
+}
+
+.projects h1 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.projects h3 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.projects span {
+  font-size: 1em;
+}
+
+.projects .introduction {
+  margin: 15px;
+  padding: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.projects .list-projects img {
+  height: 300px;
+  width: 300px;
+  object-fit: coverd;
+  border-radius: 10px;
+}
+
+img[src="https://github.com/jlee0810/personal-website/blob/main/image/hang.png?raw=true"] {
+  /* object-fit: cover; */
+  height: 375px !important;
+  width: 250px !important;
+  border-radius: 10px;
+}
+
+img[src="https://github.com/jlee0810/personal-website/blob/main/image/jump-showdown.png?raw=true"] {
+  height: 230px !important;
+  width: 350px !important;
+  border-radius: 10px;
+}
+
+.education {
+  background-color: skyblue;
+  padding-top: 50px;
+}
+.education .list-education {
+  margin: 0% 20% 0% 20%;
+  padding: 2% 0%;
+}
+
+.education h1 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.education h3 {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.education .introduction {
+  margin: 15px;
+  padding: 10px;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.bottom-container {
+  margin: 2%;
+  text-align: center;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 5px solid beige;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
